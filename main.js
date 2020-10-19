@@ -3,9 +3,7 @@ const knex=require('./knex')
 const app=express();
 const router =express.Router();
 const jwt = require('jsonwebtoken');
-const cookieParser=require('cookie-parser');
 app.use('/',router)
-app.use(cookieParser())
 router.use(express.json())
 
 router.get('/test',(req,res)=>{
